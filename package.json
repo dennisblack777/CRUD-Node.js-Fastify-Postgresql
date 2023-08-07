@@ -1,0 +1,37 @@
+{
+  "name": "crud-api-typescript-fastify-postgresql",
+  "version": "1.0.0",
+  "description": "A CRUD API using typescript, fastify and postgresql",
+  "main": "server.ts",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/server.js",
+    "start:dev": "npx nodemon"
+  },
+  "author": "dennisblack777 (https://github.com/dennisblack777/)",  
+  "keywords": ["CRUD", "API", "fastify", "typescript", "postgresql", "postgres", "swagger", "eslint", "prettier", "dotenv"],
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/postgres": "^5.2.0",    
+    "dotenv": "^16.3.1",
+    "fastify": "^4.21.0",
+    "pg": "^8.11.2"
+  },
+  "devDependencies": {
+    "@fastify/swagger": "^8.8.0",
+    "@fastify/swagger-ui": "^1.9.3",
+    "@types/node": "^20.4.6",
+    "@types/pg": "^8.10.2",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "nodemon": "^3.0.1",
+    "pino-pretty": "^10.2.0",
+    "prettier": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
